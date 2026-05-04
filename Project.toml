@@ -4,7 +4,7 @@ keywords = ["topological data analysis", "persistent homology"]
 license = "GNU"
 desc = "High-performance persistent homology calculation, with generators."
 author = "Gregory Henselman-Petrusek <gh10@princeton.edu>"
-version = "1.4.0"
+version = "1.4.1"
 
 [deps]
 Blink = "ad839575-38b3-5650-b840-f874b8c74a25"
