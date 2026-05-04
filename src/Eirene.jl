@@ -5566,7 +5566,7 @@ function plotbarcode_pjs(C::Dict; dim = 0:C["input"]["maxdim"], sortby = "birth"
         @assert length(dim) == length(minage) "Number of dimensions (was $(length(dim))) must be the same as the number of minageerance values (was $(length(minage)))."
 
         # colors = Colors.distinguishable_colors(length(dim)+1,[RGB(1,1,1)])[2:end]
-        cols = Colors.colormap("Blues", mid = 0.5)
+        cols = Colors.colormap("Blues")
         rangevar = Int.(round.(collect(range(50,stop=100,length=length(dim)+1))))
         colors = map(r -> cols[r], rangevar)
 
