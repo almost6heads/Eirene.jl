@@ -5389,7 +5389,7 @@ function classrep_pjs(
 				metricmatrix = hopdistance(edges_orderverts,inputis = "edges")
 			end
 		end
-		coords = transform(fit(MDS, float.(metricmatrix), maxoutdim = embeddingdim, distances=true)) #classical_mds(metricmatrix,embeddingdim)
+		coords = MultivariateStats.transform(fit(MDS, float.(metricmatrix), maxoutdim = embeddingdim, distances=true)) #classical_mds(metricmatrix,embeddingdim)
 		# coords = round.(coords,10)
 		model = "pc"
 	end
